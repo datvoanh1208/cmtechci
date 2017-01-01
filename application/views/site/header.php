@@ -12,16 +12,16 @@ $(function() {
 <div class="top">
     <!-- The top -->
       <div id="logo"><!-- the logo -->
-           <a href="" title="Học lập trình website với PHP và MYSQL">
-	           <img src="<?php echo public_url()?>/site/images/logo.jpg" alt="Học lập trình website với PHP và MYSQL">
+           <a href="<?php echo base_url()?>" title="Học lập trình website với PHP và MYSQL">
+	           <img src="<?php echo public_url()?>/site/images/logo1.png" alt="Học lập trình website với PHP và MYSQL">
 	       </a>
        </div>
     <!-- End logo -->
        
        <!--  load gio hàng -->
       <div id="cart_expand" class="cart"> 
-            <a href="gio-hang.html" class="cart_link">
-               Giỏ hàng <span id="in_cart">0</span> sản phẩm
+            <a href="<?php echo base_url('cart')?>" class="cart_link">
+               Giỏ hàng <span id="in_cart"><?php echo $total_items?></span> sản phẩm
             </a> 
             <img alt="cart bnc" src="<?php echo public_url()?>/site/images/cart.png"> 
 </div>       
@@ -36,7 +36,7 @@ $(function() {
                <!-- The box-header-->
 			        <div id="menu"><!-- the menu -->
            <ul class="menu_top">
-                <li class="active index-li"><a href="">Trang chủ </a></li>
+                <li class="active index-li"><a href="<?php echo base_url()?>">Trang chủ </a></li>
                 <li class=""><a href="info/view/1.html">Giới thiệu</a></li>
                 <li class=""><a href="info/view/2.html">Hướng dẫn</a></li>
                 <li class=""><a href="san-pham.html">Sản phẩm</a></li>

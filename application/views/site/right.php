@@ -7,7 +7,7 @@
 			    <div class="content-box">
 			         <!-- goi ra phuong thuc hien thi danh sach ho tro -->
 			         <div class="support">
-                    <strong>Hoang van tuyen </strong>				
+                    <strong>Vo Anh Dat </strong>				
           <a rel="nofollow" href="ymsgr:sendIM?tuyenht90">
 		    <img src="http://opi.yahoo.com/online?u=tuyenht90&amp;m=g&amp;t=2">
 	      </a>
@@ -16,13 +16,13 @@
 	         <img style="margin-bottom:-3px" src="<?php echo public_url()?>/site/images/phone.png"> 01686039488	      </p>
 	      
 		  <p>
-			<a rel="nofollow" href="mailto:hoangvantuyencnt@gmail.com">
-			    <img style="margin-bottom:-3px" src="<?php echo public_url()?>/site/images/email.png"> Email: hoangvantuye...
+			<a rel="nofollow" href="mailto:datvoanh95@gmail.com@gmail.com">
+			    <img style="margin-bottom:-3px" src="<?php echo public_url()?>/site/images/email.png"> Email: Vo Anh Dat...
 		    </a>
 		  </p>
 		  <p>
-			<a rel="nofollow" href="skype:tuyencnt90">
-			     <img style="margin-bottom:-3px" src="<?php echo public_url()?>/site/images/skype.png"> Skype: tuyencnt90			</a>
+			<a rel="nofollow" href="skype:anhdat95">
+			     <img style="margin-bottom:-3px" src="<?php echo public_url()?>/site/images/skype.png"> Skype: anhdat95			</a>
 		</p>	
 		</div>			        </div>
           </div>
@@ -35,27 +35,15 @@
 			    </div>
 			    <div class="content-box">
 			       <ul class="news">
-			            			            <li>
-			                <a href="news/view/4.html" title="Mỹ tăng cường không kích Iraq">
-			                <img src="<?php echo public_url()?>/site/images/li.png">
-			                Mỹ tăng cường không kích Iraq	                        </a>
-	                     </li>
-	                    			            <li>
-			                <a href="news/view/3.html" title="Hà Nội: CSGT tìm người thân giúp cháu bé 8 tuổi đi lạc">
-			                <img src="<?php echo public_url()?>/site/images/li.png">
-			                Hà Nội: CSGT tìm người thân giúp cháu bé 8 tuổi đi lạc	                        </a>
-	                     </li>
-	                    			            <li>
-			                <a href="news/view/2.html" title="Arsenal đồng ý bán Vermaelen cho Barcelona">
-			                <img src="<?php echo public_url()?>/site/images/li.png">
-			                Arsenal đồng ý bán Vermaelen cho Barcelona	                        </a>
-	                     </li>
-	                    			            <li>
-			                <a href="news/view/1.html" title="Nhà lầu siêu xe hàng mã ế sưng, đồ chơi biển đảo hút khách">
-			                <img src="<?php echo public_url()?>/site/images/li.png">
-			                Nhà lầu siêu xe hàng mã ế sưng, đồ chơi biển đảo hút khách	                        </a>
-	                     </li>
-	                    	             </ul>
+			       <?php foreach($news_list as $row) :?>
+				    <li>
+					    <a href="" title="<?php echo $row->title?>" >
+			<img src="<?php echo base_url('upload/news/'.$row->image_link)?>" style="width:50px" alt="<?php echo $row->title?>">
+					    <?php echo $row->title?>
+					    </a>
+				     </li>
+	                <?php endforeach;?>  			           
+	                 </ul>
 	    </div>
    </div>		<!-- End news -->
 		

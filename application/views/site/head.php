@@ -9,6 +9,11 @@
 <link type="text/css" href="<?php echo public_url()?>/site/css/slide-flim.css" rel="stylesheet">
 <!-- End CSS -->
 
+<!-- Link logo tren thanh address -->
+<LINK REL="SHORTCUT ICON"
+       HREF="<?php echo public_url()?>/site/images/favicon.ico">
+<!-- End link logo tren thanh address -->
+
 <!-- the Javascript -->
 
 <script src="//e.dtscout.com/e/?v=1a&amp;pid=5200&amp;site=1&amp;l=file%3A%2F%2F%2FC%3A%2Fxampp%2Fhtdocs%2Fcmtech%2Fpublic%2Fsite%2Findex.html&amp;j=" async="" type="text/javascript"></script><script src="//e.dtscout.com/e/?v=1a&amp;pid=5200&amp;site=1&amp;l=file%3A%2F%2F%2FC%3A%2Fxampp%2Fhtdocs%2Fcmtech%2Fpublic%2Fsite%2Findex.html&amp;j=" async="" type="text/javascript"></script><script type="text/javascript" src="<?php echo public_url()?>/js/jquery/jquery.min.js"></script>

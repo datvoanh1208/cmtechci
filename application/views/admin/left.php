@@ -110,11 +110,11 @@
 
                                         <ul class="sub" style="display: none;">
                                                                         <li>
-                                        <a href="admin/slide.html">
+                                        <a href="<?php echo admin_url('slide') ?>">
                                                 Slide							</a>
                                 </li>
                                                                         <li>
-                                        <a href="admin/news.html">
+                                        <a href="<?php echo admin_url('news')?>">
                                                 Tin tức							</a>
                                 </li>
                                                                         <li>

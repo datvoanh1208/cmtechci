@@ -104,13 +104,13 @@
 					</td>
 					
 					<td class="textR">
-                                            <?php if($row->discount > 0): ?>
-                                            <?php $price_new = $row->price - $row->discount; ?>
-                                            <b style=""color:red"><?php echo number_format($price_new) ?></b>
-                                            <p style="text-decoration:line-through"><?php echo number_format($row->price) ?> đ</p>
-					     <?php else: ?>  
-                                            <b style=""color:red"><?php echo number_format($row->price) ?></b>
-                                             <?php endif;?>
+                        <?php if($row->discount > 0): ?>
+                        <?php $price_new = $row->price - $row->discount; ?>
+                        <b style=""color:red"><?php echo number_format($price_new) ?></b>
+                        <p style="text-decoration:line-through"><?php echo number_format($row->price) ?> đ</p>
+    					 <?php else: ?>  
+                        <b style=""color:red"><?php echo number_format($row->price) ?></b>
+                         <?php endif;?>
 					</td>
 
 					
