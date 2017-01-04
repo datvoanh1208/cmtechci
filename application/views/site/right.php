@@ -13,7 +13,7 @@
 	      </a>
 	      
 	      <p>
-	         <img style="margin-bottom:-3px" src="<?php echo public_url()?>/site/images/phone.png"> 01686039488	      </p>
+	         <img style="margin-bottom:-3px" src="<?php echo public_url()?>/site/images/phone.png"> 01235154194	      </p>
 	      
 		  <p>
 			<a rel="nofollow" href="mailto:datvoanh95@gmail.com@gmail.com">
@@ -67,8 +67,8 @@
 			    </div>
 			    <div class="content-box">
 			          
-			         <iframe src="http://www.facebook.com/plugins/likebox.php?href=https://www.facebook.com/nobitacnt&amp;width=190&amp;height=300&amp;show_faces=true&amp;colorscheme=light&amp;stream=false&amp;border_color&amp;header=true" scrolling="no" style="border:none; overflow:hidden; width:190px; height:300px;" allowtransparency="true" frameborder="0">
-	                 </iframe>
+			      <!--    <iframe src="http://www.facebook.com/plugins/likebox.php?href=https://www.facebook.com/nobitacnt&amp;width=190&amp;height=300&amp;show_faces=true&amp;colorscheme=light&amp;stream=false&amp;border_color&amp;header=true" scrolling="no" style="border:none; overflow:hidden; width:190px; height:300px;" allowtransparency="true" frameborder="0">
+	                 </iframe> -->
 	               
 			    </div>
 		   </div>

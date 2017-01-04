@@ -2,16 +2,16 @@
 			    <!-- The box-footer-->
 		        
      <div id="footer_text"> <!-- The footer_text --> 
-	     <strong>Học lập trình website online miễn phí.</strong>
-		 <p>Hướng dẫn xây dựng website bán hàng và thanh toán trực tuyến. </p>
-		 <p>Video hướng dẫn: <a href="https://www.youtube.com/watch?list=PLml7xFCO5p8rlpbV-9bDdz74cCXQCmeDk&amp;v=YRyzBuA_O4A">Xem video</a></p>
-		 <p>Website: <a href="http://hocphp.info">hocphp.info</a></p>
-		 <p>Fanpage: <a href="https://www.facebook.com/nobitacnt/">https://www.facebook.com/nobitacnt/</a></p>
+	     <strong>CMTech's Store.</strong>
+		 <p>Demo project xây dựng website bán hàng và thanh toán trực tuyến. </p>
+		 <p>Video hướng dẫn: <a href="https://www.youtube.com/">Xem video</a></p>
+		 <p>Website: <a href="">cmtech.com.vn</a></p>
+		 <p>Fanpage: <a href="https://www.facebook.com/cmtshop/">https://www.facebook.com/cmtshop/</a></p>
 		 
 	 </div><!-- End footer_text -->
 	 
 	  <div id="footer_face">  <!-- The footer_face -->            
-	        <a title="trên facebook" target="_blank" href="https://www.facebook.com/nobitacnt" rel="nofollow">
+	        <a title="trên facebook" target="_blank" href="https://www.facebook.com/cmtshop" rel="nofollow">
 	             <img alt="trên facebook" src="<?php echo public_url()?>/site/images/facebook.png">
 	        </a>
 	         

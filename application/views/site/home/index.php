@@ -1,5 +1,4 @@
-<?php
-    $this->load->view('site/slide', $this->data); ?>
+<?php $this->load->view('site/slide', $this->data); ?>
 
 <div class="box-center"><!-- The box-center product-->
     <div class="tittle-box-center">
@@ -20,8 +19,6 @@
               </div>
                      
 
-                   
-
               <p class="price"> 
               <?php if($row->discount > 0): ?> 
               <?php $price_new = $row->price - $row->discount; ?>
@@ -32,12 +29,12 @@
                </p>
                <center>
                  <div class='raty' style='margin:10px 0px' id='9' data-score='4'>
-                   <img src="raty/img/star-on.png" alt="1" title="good">&nbsp;
+                   <!-- <img src="raty/img/star-on.png" alt="1" title="good">&nbsp;
                    <img src="raty/img/star-on.png" alt="2" title="good">&nbsp;
                    <img src="raty/img/star-on.png" alt="3" title="good">&nbsp;
                    <img src="raty/img/star-on.png" alt="4" title="good">&nbsp;
                    <img src="raty/img/star-off.png" alt="5" title="good">
-                   <input name="score" value="4" readonly="readonly" type="hidden">
+                   <input name="score" value="4" readonly="readonly" type="hidden"> -->
                  </div>
                </center>
               <div class="action">
@@ -82,12 +79,12 @@
                </p>
                <center>
                  <div class='raty' style='margin:10px 0px' id='9' data-score='4'>
-                   <img src="raty/img/star-on.png" alt="1" title="good">&nbsp;
+                  <!--  <img src="raty/img/star-on.png" alt="1" title="good">&nbsp;
                    <img src="raty/img/star-on.png" alt="2" title="good">&nbsp;
                    <img src="raty/img/star-on.png" alt="3" title="good">&nbsp;
                    <img src="raty/img/star-on.png" alt="4" title="good">&nbsp;
                    <img src="raty/img/star-off.png" alt="5" title="good">
-                   <input name="score" value="4" readonly="readonly" type="hidden">
+                   <input name="score" value="4" readonly="readonly" type="hidden"> -->
                  </div>
                </center>
               <div class="action">

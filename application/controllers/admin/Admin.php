@@ -20,7 +20,6 @@ class Admin extends MY_Controller
         
         //Lay noi dung cua bien message
         $message = $this->session->flashdata('message');
-        
         $this->data['message'] = $message; 
         
         $this->data['temp'] = 'admin/admin/index';

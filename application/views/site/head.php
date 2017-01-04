@@ -68,4 +68,4 @@ $(document).ready(function(){
 }
 </style>
 
-        <title>Học lập trình website với PHP và MYSQL</title>   
+        <title>CMTech Store</title>   

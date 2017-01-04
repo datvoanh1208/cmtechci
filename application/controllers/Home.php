@@ -19,6 +19,11 @@ class Home extends MY_Controller
     	$product_buy = $this->product_model->get_list($input);
 		$this->data['product_buy'] = $product_buy;
         
+        //Lay noi dung cua bien message
+        $message = $this->session->flashdata('message');
+        $this->data['message'] = $message; 
+
+        
         $this->data['temp'] = 'site/home/index';
         $this->load->view('site/layout', $this->data);
     }

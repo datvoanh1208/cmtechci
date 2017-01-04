@@ -5,7 +5,7 @@
 <script type="text/javascript">
 $(function() {
     $( "#text-search" ).autocomplete({
-        source: "product/search_ac.html",
+        source: "<?php echo site_url('product/search/1')?>",
     });
 });
 </script>
@@ -26,8 +26,8 @@ $(function() {
             <img alt="cart bnc" src="<?php echo public_url()?>/site/images/cart.png"> 
 </div>       
        <div id="search"><!-- the search -->
-			<form method="get" action="tim-kiem.html">
-			     				 <input id="text-search" name="key-search" value="" placeholder="Tìm kiếm sản phẩm..." class="ui-autocomplete-input" autocomplete="off" role="textbox" aria-autocomplete="list" aria-haspopup="true" type="text">
+			<form method="get" action="<?php echo site_url('product/search')?>">
+			     				 <input id="text-search" name="key-search" value="<?php echo isset($key) ? $key : ''?>" placeholder="Tìm kiếm sản phẩm..." class="ui-autocomplete-input" autocomplete="off" role="textbox" aria-autocomplete="list" aria-haspopup="true" type="text">
 				 <input id="but" name="but" value="" type="submit">
 			</form>
        </div><!-- End search --> 
@@ -43,7 +43,12 @@ $(function() {
                 <li class=""><a href="tin-tuc.html">Tin tức</a></li>
                 <li class=""><a href="video.html">Video</a></li>
                 <li class=""><a href="lien-he.html">Liên hệ</a></li>
-                <li class=""><a href="dang-ky.html">Đăng ký</a></li>
-                <li class=""><a href="dang-nhap.html">Đăng nhập</a></li>
+                <?php if(isset($user_info)): ?>
+                  <li class=""><a href="<?php echo site_url('user')?>">Xin chào, <?php echo $user_info->name ?> !</a></li>
+                  <li class=""><a href="<?php echo site_url('user/logout')?>">Thoát</a></li>
+                <?php else:?>
+                <li class=""><a href="<?php echo site_url('user/register')?>">Đăng ký</a></li>
+                <li class=""><a href="<?php echo site_url('user/login')?>">Đăng nhập</a></li>
+              <?php endif;?>
            </ul>
 </div><!-- End menu -->			   <!-- End box-header  -->

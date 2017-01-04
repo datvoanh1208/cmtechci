@@ -53,4 +53,54 @@ Class Cart extends MY_Controller
 		$this->data['temp'] = 'site/cart/index';
 		$this->load->view('site/layout', $this->data);
 	}
+
+	//Cap nhat gio hang
+	function update()
+	{
+		//Thong tin gio hang
+		$carts = $this->cart->contents();
+
+		foreach($carts as $key => $row)
+		{
+			//Tong so luong san pham
+			$total_qty = $this->input->post('qty_'.$row['id']);
+			$data = array();
+			$data['rowid'] = $key;
+			$data['qty']=$total_qty;
+			$this->cart->update($data); 
+		}
+		//Chuyen sang trang danh sach san pham trong gio hang
+		redirect(base_url('cart'));
+
+	}
+	//Xoa cac sp trong gio hang
+	function del()
+	{
+		$id = $this->uri->rsegment(3);
+		$id = intval($id);
+		//Truong hop xoa 1 sp nao do trong gio hang
+		if($id > 0)
+		{
+			//Thong tin gio hang
+			$carts = $this->cart->contents();
+			foreach($carts as $key => $row)
+			{
+				//Tong so luong san pham
+				if($row['id'] == $id)
+				{
+				$data = array();
+				$data['rowid'] = $key;
+				$data['qty']=0;
+				$this->cart->update($data);
+				}
+				 
+			}
+		}else
+		{
+			//Xoa toan bo gio hang
+			$this->cart->destroy();
+		}
+		//Chuyen sang trang danh sach san pham trong gio hang
+		redirect(base_url('cart'));
+	}
 }
