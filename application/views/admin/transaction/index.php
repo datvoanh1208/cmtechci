@@ -5,7 +5,6 @@
 
 <div class="wrapper" id="main_transaction">
 	<div class="widget">
-	
 		<div class="title">
 			<span class="titleIcon"><input id="titleCheck" name="titleCheck" type="checkbox"></span>
 			<h6>
@@ -45,7 +44,6 @@
 					<td style="width:120px;">Hành động</td>
 				</tr>
 			</thead>
-			
 			
  			<tfoot class="auto_check_pages">
 				<tr>
