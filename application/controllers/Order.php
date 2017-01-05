@@ -88,10 +88,17 @@ Class Order extends MY_Controller
                }
                //Xoa toan bo gio hang
 				$this->cart->destroy();
-				//Tao ra noi dung thong bao
-                $this->session->set_flashdata('message', 'Bạn đã đặt hàng thành công, chúng tôi sẽ kiểm tra và gửi hàng cho bạn!');
-               //Chuyen toi trang danh sach quan tri vien
-                redirect(site_url());
+				if($payment == 'offline')
+				{
+					//Tao ra noi dung thong bao
+              	 	 $this->session->set_flashdata('message', 'Bạn đã đặt hàng thành công, chúng tôi sẽ kiểm tra và gửi hàng cho bạn!');
+               		//Chuyen toi trang danh sach quan tri vien
+               		 redirect(site_url());
+				} elseif (in_array($payment, array('nganluong', 'baokim')))//Neu thanh toan bang cong thanh toan
+				{
+
+				} 
+				
             }
         }
 

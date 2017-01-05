@@ -1,4 +1,3 @@
-
 <?php
 Class Product extends My_Controller
 {

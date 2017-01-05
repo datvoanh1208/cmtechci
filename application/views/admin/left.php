@@ -32,11 +32,11 @@
 
                                         <ul class="sub" style="display: none;">
                                                                         <li>
-                                        <a href="admin/tran.html">
+                                        <a href="<?php echo admin_url('transaction')?>">
                                                 Giao dịch							</a>
                                 </li>
                                                                         <li>
-                                        <a href="admin/product_order.html">
+                                        <a href="<?php echo admin_url('order')?>">
                                                 Đơn hàng sản phẩm							</a>
                                 </li>
                                                         </ul>

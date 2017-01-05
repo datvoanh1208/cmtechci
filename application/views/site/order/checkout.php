@@ -61,8 +61,9 @@
             <div class="form-item">
               <select name="payment">
                 <option value="">----- Chọn cổng thanh toán -----</option>
-                <option value="nganLuong">Ngân lượng</option>
                 <option value="offline">Thanh toán khi nhận hàng</option>
+                <option value="baokim">Bảo Kim</option>
+                <option value="nganLuong">Ngân lượng</option>
               </select>
               <div class="clear"></div>
               <div id="message_error" class="error"><?php echo form_error('payment'); ?></div>
