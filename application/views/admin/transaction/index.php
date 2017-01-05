@@ -46,6 +46,7 @@
 				</tr>
 			</thead>
 			
+			
  			<tfoot class="auto_check_pages">
 				<tr>
 					<td colspan="7">
