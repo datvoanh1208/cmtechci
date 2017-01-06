@@ -76,7 +76,7 @@
                         Nhóm quản trị							</a>
         </li>
                                                 <li>
-                <a href="admin/user.html">
+                <a href="<?php echo admin_url('user')?>">
                         Thành viên							</a>
         </li>
                                 </ul>

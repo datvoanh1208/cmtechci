@@ -1,4 +1,3 @@
-
 <?php
 Class Transaction extends My_Controller
 {
